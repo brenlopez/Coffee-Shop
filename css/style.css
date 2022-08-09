@@ -36,6 +36,7 @@ nav h1 {
 #portada {
   background-image: url(../imagenes/portada.jpg);
   background-repeat: no-repeat;
+  background-position: center;
   max-width: 100%;
   height: 314px;
   color: white;
