@@ -1,0 +1,416 @@
+/* LOPEZ, BRENDA DENISSE */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#botonCarrito {
+  background-image: url(../imagenes/carrito.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+  padding-left: 35px;
+}
+nav h1 {
+  margin-bottom: 0px;
+}
+#navegacion {
+  display: flex;
+  list-style: none;
+  margin: auto auto;
+}
+
+#navegacion li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+}
+#navegacion li:nth-of-type(4) a {
+  margin-right: 0px;
+}
+#navegacion li a:hover {
+  color: rgb(219, 183, 19);
+}
+
+#portada {
+  background-image: url(../imagenes/portada.jpg);
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 314px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-top: 10vh;
+  margin-bottom: 1.5rem;
+}
+
+#portada h2 {
+  position: relative;
+  top: 40%;
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  padding-top: 0vh;
+}
+
+#productos {
+  justify-content: space-between;
+}
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  align-self: center;
+}
+
+.card img {
+  max-width: 100%;
+}
+.col-lg-3 {
+  width: 22%;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 1rem 0 0.5rem 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+.card p:first-of-type {
+  font-size: 0.9rem;
+  color: grey;
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+}
+.card div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card p:last-of-type {
+  font-weight: 500;
+}
+
+#carrito {
+  background-color: white;
+  height: auto;
+  width: 28.75vw;
+  position: absolute;
+  z-index: 1000;
+  top: 55px;
+  left: 70vw;
+  border: 1px gainsboro solid;
+  padding: 3vh;
+}
+#cerrar {
+  float: right;
+  font-weight: 600;
+}
+#carrito h3 {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#listaCarrito .list-group-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#carrito h4 {
+  font-size: 1rem;
+  align-self: center;
+  width: 70%;
+}
+
+.cantidad {
+  display: flex;
+  align-items: center;
+}
+.cantidad p {
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  margin: auto 0;
+  border: 1px solid gainsboro;
+  align-self: center;
+}
+.cantidad button {
+  height: 2rem;
+  width: 2rem;
+  font-weight: 600;
+}
+.precio {
+  width: 60%;
+  font-weight: 500;
+  padding-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-self: center;
+}
+
+.subtotal {
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  color: grey;
+}
+#vaciar,
+#comprar {
+  float: right;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+#totalCarrito {
+  margin: 1rem 0 2rem 0;
+  font-weight: 600;
+}
+footer {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  text-align: center;
+  margin-top: 10vh;
+  padding: 2rem;
+}
+
+#fondo,
+#modal,
+#modalProducto {
+  background-color: rgba(0, 0, 0, 0.308);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+}
+
+#resumen {
+  position: fixed;
+  background-color: white;
+  top: 1.6vh;
+  left: 20vw;
+  width: 60vw;
+  z-index: 1500;
+  color: black;
+  padding: 2.5% 7%;
+  border-radius: 5px;
+}
+
+#resumen h2 {
+  font-size: 1.3rem;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 0;
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 0rem;
+}
+
+form legend {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+form input {
+  border-color: gainsboro;
+  margin-bottom: 0.8rem;
+  width: 100%;
+}
+.form-control {
+  font-size: 0.85rem;
+}
+fieldset:first-of-type input:first-of-type,
+fieldset:first-of-type input:nth-of-type(2) {
+  width: 49%;
+  margin-right: 0;
+  display: inline;
+}
+fieldset:nth-last-of-type(2) input:first-of-type,
+fieldset:nth-last-of-type(2) input:nth-of-type(2) {
+  width: 49%;
+  margin-right: 0;
+  display: inline;
+}
+
+fieldset:first-of-type input:nth-of-type(2),
+fieldset:nth-last-of-type(2) input:nth-of-type(2) {
+  float: right;
+}
+
+fieldset:last-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+#tarjeta {
+  width: 100%;
+}
+#tarjeta input:first-of-type {
+  width: 49%;
+  display: inline-block;
+  margin-right: 1.5%;
+}
+#tarjeta input:nth-child(2) {
+  margin-right: 1.5%;
+}
+#tarjeta input:nth-child(2),
+#tarjeta input:nth-child(3) {
+  width: 24%;
+  display: inline-block;
+}
+.form-select {
+  font-size: 0.85rem;
+}
+.radio input {
+  margin-right: 0.5rem;
+}
+#totalResumen {
+  background-color: rgb(243, 243, 243);
+  font-weight: 500;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+}
+#totalResumen span {
+  font-weight: 700;
+  color: rgb(10, 167, 10);
+  font-size: 0.8rem;
+  float: right;
+}
+#botonesResumen {
+  display: flex;
+  justify-content: flex-end;
+}
+#botonesResumen .btn-outline-dark {
+  margin-right: 0.5rem;
+}
+#publicidad {
+  max-width: 711px;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  position: fixed;
+  margin-left: 50%;
+  top: 20vh;
+  left: -335.5px;
+  padding: 1rem;
+}
+#cerrarModal {
+  float: right;
+}
+
+#verCategoria {
+  position: relative;
+  top: 60%;
+  left: 15%;
+}
+
+#modalProducto .card {
+  max-width: 727px;
+  max-height: 451px;
+  height: 100%;
+  flex-direction: row;
+  padding: 3.75rem;
+  margin: 15vh auto;
+}
+
+#cerrarProducto {
+  position: absolute;
+  left: 90%;
+}
+
+#imagen {
+  max-width: 269px;
+  width: 100%;
+  max-height: 332px;
+  height: 100%;
+  background-position: center;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#info {
+  margin-left: 3rem;
+  align-self: baseline;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+#info h3 {
+  font-size: 1.5rem;
+}
+
+#info button {
+  width: 60%;
+  margin: 1.5rem 0;
+}
+
+#derecha,
+#izquierda {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#derecha {
+  background-image: url(../imagenes/derecha.png);
+}
+#izquierda {
+  background-image: url(../imagenes/izquierda.png);
+}
+
+@media screen and (max-width: 1199px) {
+  .col-lg-3 {
+    width: 28%;
+  }
+  #carrito {
+    width: 35vw;
+    left: 65vw;
+  }
+  #resumen {
+    left: 15vw;
+    width: 70vw;
+    padding: 2% 7%;
+    top: 1vh;
+  }
+}
+@media screen and (max-width: 991px) {
+  #carrito {
+    width: 42vw;
+    left: 58vw;
+  }
+  #publicidad {
+    max-width: 711px;
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    position: fixed;
+    margin-left: 50%;
+    top: 20vh;
+    left: -335.5px;
+    padding: 1rem;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .col-md-6 {
+    width: 40%;
+  }
+  #portada h2 {
+    font-size: 2.5rem;
+  }
+  #carrito {
+    width: 55vw;
+    left: 45vw;
+  }
+}
